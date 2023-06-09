@@ -1,1 +1,1 @@
-# Repo for TypeScript templates
+# Repository for templates
