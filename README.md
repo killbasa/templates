@@ -1,1 +1,1 @@
-# templates
+# Repository for templates
