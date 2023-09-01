@@ -7,19 +7,20 @@
 		"templates/*"
 	],
 	"scripts": {
-		"postinstall": "husky install"
+		"postinstall": "husky install",
+		"update": "yarn upgrade-interactive"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.6.5",
-		"@commitlint/config-conventional": "^17.6.5",
-		"@kbotdev/eslint-config": "^1.0.0",
+		"@commitlint/cli": "^17.7.1",
+		"@commitlint/config-conventional": "^17.7.0",
+		"@kbotdev/eslint-config": "^1.1.0",
 		"@kbotdev/prettier-config": "^1.0.0",
 		"@kbotdev/ts-config": "^1.0.0",
-		"@types/node": "^20.2.5",
-		"eslint": "^8.42.0",
+		"@types/node": "^20.5.8",
+		"eslint": "^8.48.0",
 		"husky": "^8.0.3",
-		"lint-staged": "^14.0.0",
-		"prettier": "^3.0.0"
+		"lint-staged": "^14.0.1",
+		"prettier": "^3.0.3"
 	},
 	"lint-staged": {
 		"*.{mjs,cjs,js,ts}": [
@@ -38,5 +39,5 @@
 	"engines": {
 		"node": ">=20.x"
 	},
-	"packageManager": "yarn@3.6.0"
+	"packageManager": "yarn@3.6.3"
 }

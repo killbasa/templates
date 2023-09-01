@@ -3,6 +3,6 @@
 	"compilerOptions": {
 		"noEmit": true
 	},
-	"include": ["remplates/**/*.ts", ".eslintrc.cjs"],
+	"include": ["remplates/**/*.ts", ".eslintrc.cjs", ".prettier.js"],
 	"exclude": ["node_modules"]
 }
