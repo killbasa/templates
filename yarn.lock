@@ -751,12 +751,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kbotdev/ts-config@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@kbotdev/ts-config@npm:0.1.0"
+"@kbotdev/ts-config@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@kbotdev/ts-config@npm:1.0.0"
   dependencies:
-    typescript: ^5.1.3
-  checksum: e06c4eb09411540841005a6c1bfe1c0db5e7334fa6c4beed64fb03d627cd4ee4de53ccebae3714d41af53b4b93eac6f2f83037e3d7dbd7096131a60f5d128da5
+    typescript: ^5.1.6
+  checksum: f7c79f0c08614b1158605d8876664ed1a7548bd8bc64d8e6d789e1d93fe792ed76a638fd497d9d84150f04e4a1724246fae94099839cfd6f257a417ddf689e73
   languageName: node
   linkType: hard
 
@@ -4468,7 +4468,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.6.5
     "@kbotdev/eslint-config": ^1.0.0
     "@kbotdev/prettier-config": ^1.0.0
-    "@kbotdev/ts-config": ^0.1.0
+    "@kbotdev/ts-config": ^1.0.0
     "@swc/core": ^1.3.62
     "@types/node": ^20.2.5
     eslint: ^8.42.0
@@ -5728,7 +5728,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.6.5
     "@kbotdev/eslint-config": ^1.0.0
     "@kbotdev/prettier-config": ^1.0.0
-    "@kbotdev/ts-config": ^0.1.0
+    "@kbotdev/ts-config": ^1.0.0
     "@types/node": ^20.2.5
     eslint: ^8.42.0
     husky: ^8.0.3
