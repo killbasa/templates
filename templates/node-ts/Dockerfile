@@ -1,5 +1,5 @@
 ## Builder ##
-FROM node:20-alpine as builder
+FROM node:21-alpine as builder
 
 WORKDIR /temp
 
@@ -12,7 +12,7 @@ RUN yarn install --immutable && \
 	yarn build
 
 ## App ##
-FROM node:20-alpine as app
+FROM node:21-alpine as app
 
 ENV NODE_ENV=production
 
