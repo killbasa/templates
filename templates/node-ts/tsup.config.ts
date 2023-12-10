@@ -12,7 +12,7 @@ export default defineConfig({
 	skipNodeModulesBundle: true,
 	splitting: false,
 	sourcemap: true,
-	target: 'esnext',
+	target: 'es2022',
 	treeshake: true,
 	tsconfig: './tsconfig.json'
 });

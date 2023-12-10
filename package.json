@@ -8,27 +8,28 @@
 	],
 	"scripts": {
 		"postinstall": "husky install",
-		"update": "yarn upgrade-interactive"
+		"update": "yarn upgrade-interactive",
+		"dd": "yarn dedupe --strategy highest"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.7.1",
-		"@commitlint/config-conventional": "^17.7.0",
-		"@kbotdev/eslint-config": "^1.1.0",
-		"@kbotdev/prettier-config": "^1.0.0",
-		"@kbotdev/ts-config": "^1.0.0",
-		"@types/node": "^20.5.8",
-		"eslint": "^8.48.0",
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"@kbotdev/eslint-config": "^2.0.1",
+		"@kbotdev/prettier-config": "^1.0.2",
+		"@kbotdev/ts-config": "^1.0.2",
+		"@types/node": "^20.10.4",
+		"eslint": "^8.55.0",
 		"husky": "^8.0.3",
-		"lint-staged": "^14.0.1",
-		"prettier": "^3.0.3"
+		"lint-staged": "^15.2.0",
+		"prettier": "^3.1.1"
 	},
 	"lint-staged": {
 		"*.{mjs,cjs,js,ts}": [
 			"eslint --fix --ext js,ts",
-			"prettier --write --loglevel=warn \"**/*.{mjs,cjs,js,ts}\""
+			"prettier --write --logleve-l=warn \"**/*.{mjs,cjs,js,ts}\""
 		],
 		"*.{json,yml,yaml,md}": [
-			"prettier --write --loglevel=warn \"**/*.{json,yml,yaml,md}\""
+			"prettier --write --log-level=warn \"**/*.{json,yml,yaml,md}\""
 		]
 	},
 	"commitlint": {
@@ -39,5 +40,5 @@
 	"engines": {
 		"node": ">=20.x"
 	},
-	"packageManager": "yarn@3.6.3"
+	"packageManager": "yarn@4.0.2"
 }
