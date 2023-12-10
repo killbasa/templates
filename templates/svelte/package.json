@@ -24,8 +24,8 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.7.1",
-		"@commitlint/config-conventional": "^17.7.0",
+		"@commitlint/cli": "^18.0.0",
+		"@commitlint/config-conventional": "^18.0.0",
 		"@sveltejs/adapter-auto": "^2.1.1",
 		"@sveltejs/kit": "^1.25.0",
 		"@types/node": "^20.10.4",
