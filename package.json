@@ -12,16 +12,16 @@
 		"dd": "yarn dedupe --strategy highest"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^18.4.3",
-		"@commitlint/config-conventional": "^18.4.3",
+		"@commitlint/cli": "^18.4.4",
+		"@commitlint/config-conventional": "^18.4.4",
 		"@kbotdev/eslint-config": "^2.0.1",
 		"@kbotdev/prettier-config": "^1.0.2",
 		"@kbotdev/ts-config": "^1.0.2",
-		"@types/node": "^20.10.4",
-		"eslint": "^8.55.0",
+		"@types/node": "^20.11.0",
+		"eslint": "^8.56.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^15.2.0",
-		"prettier": "^3.1.1"
+		"prettier": "^3.2.1"
 	},
 	"lint-staged": {
 		"*.{mjs,cjs,js,ts}": [
