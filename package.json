@@ -8,20 +8,19 @@
 	],
 	"scripts": {
 		"postinstall": "husky install",
-		"update": "yarn upgrade-interactive",
-		"dd": "yarn dedupe --strategy highest"
+		"prepare": "husky"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^18.4.4",
-		"@commitlint/config-conventional": "^18.4.4",
-		"@kbotdev/eslint-config": "^2.0.1",
-		"@kbotdev/prettier-config": "^1.0.2",
-		"@kbotdev/ts-config": "^1.0.2",
-		"@types/node": "^20.11.0",
-		"eslint": "^8.56.0",
-		"husky": "^8.0.3",
-		"lint-staged": "^15.2.0",
-		"prettier": "^3.2.1"
+		"@commitlint/cli": "^19.0.3",
+		"@commitlint/config-conventional": "^19.0.3",
+		"@killbasa/eslint-config": "^1.0.0",
+		"@killbasa/prettier-config": "^1.0.0",
+		"@killbasa/ts-config": "^1.0.0",
+		"@types/node": "^20.11.24",
+		"eslint": "^8.57.0",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"prettier": "^3.2.5"
 	},
 	"lint-staged": {
 		"*.{mjs,cjs,js,ts}": [
@@ -32,13 +31,8 @@
 			"prettier --write --log-level=warn \"**/*.{json,yml,yaml,md}\""
 		]
 	},
-	"commitlint": {
-		"extends": [
-			"@commitlint/config-conventional"
-		]
-	},
 	"engines": {
 		"node": ">=20.x"
 	},
-	"packageManager": "yarn@4.0.2"
+	"packageManager": "yarn@4.1.0"
 }
