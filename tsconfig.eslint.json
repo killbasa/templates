@@ -1,8 +1,12 @@
 {
-	"extends": "./tsconfig.base.json",
+	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		"noEmit": true
 	},
-	"include": ["templates/**/*.ts", ".eslintrc.cjs", ".prettier.js"],
+	"include": [
+		"templates/**/*.ts", //
+		"eslint.config.js",
+		".prettier.cjs"
+	],
 	"exclude": ["node_modules"]
 }

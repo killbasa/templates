@@ -3,28 +3,31 @@
 	"version": "0.0.1",
 	"author": "killbasa",
 	"private": true,
+	"type": "module",
 	"workspaces": [
 		"templates/*"
 	],
 	"scripts": {
 		"postinstall": "husky install",
-		"prepare": "husky"
+		"prepare": "husky",
+		"format": "yarn workspaces foreach --all run format"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.0.3",
-		"@commitlint/config-conventional": "^19.0.3",
-		"@killbasa/eslint-config": "^1.0.0",
-		"@killbasa/prettier-config": "^1.0.0",
+		"@commitlint/cli": "^19.6.1",
+		"@commitlint/config-conventional": "^19.6.0",
+		"@killbasa/eslint-config": "^3.0.1",
+		"@killbasa/prettier-config": "^1.0.2",
 		"@killbasa/ts-config": "^1.0.0",
-		"@types/node": "^20.11.24",
-		"eslint": "^8.57.0",
-		"husky": "^9.0.11",
-		"lint-staged": "^15.2.2",
-		"prettier": "^3.2.5"
+		"@types/node": "^22.10.8",
+		"eslint": "^9.18.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.1",
+		"prettier": "^3.4.2",
+		"tsx": "^4.19.2"
 	},
 	"lint-staged": {
 		"*.{mjs,cjs,js,ts}": [
-			"eslint --fix --ext js,ts",
+			"eslint --fix",
 			"prettier --write --logleve-l=warn \"**/*.{mjs,cjs,js,ts}\""
 		],
 		"*.{json,yml,yaml,md}": [
@@ -34,5 +37,9 @@
 	"engines": {
 		"node": ">=20.x"
 	},
-	"packageManager": "yarn@4.1.0"
+	"packageManager": "yarn@4.6.0",
+	"volta": {
+		"node": "22.13.0",
+		"yarn": "4.6.0"
+	}
 }
